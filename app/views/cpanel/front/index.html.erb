@@ -1,0 +1,120 @@
+<p>
+  管理页面
+</p>
+
+
+<p>
+  <%= link_to '管理网站参数配置', cpanel_site_configs_path %>
+</p>
+
+<p>
+  <%= link_to '预览页面', '#', target: '_blank', class: 'btn btn-primary' %>
+</p>
+
+<form>
+
+  <p>
+    <h3>网站配色方案</h3>
+    <br />
+    <input type="radio" name="colors" value="0"> 默认
+    <input type="radio" name="colors" value="1"> 方案1
+    <input type="radio" name="colors" value="2"> 方案2
+    <input type="radio" name="colors" value="3"> 方案3
+  </p>
+
+  <p>
+    <h3>网站Logo设置</h3>
+    <br />
+    <button class="btn">浏览</button>
+    <button class="btn">上传</button>
+  </p>
+
+  <p>
+    <h3>网站横幅设置</h3>
+    <br />
+    <button class="btn">浏览</button>
+    <button class="btn">上传</button>
+  </p>
+
+  <p>
+    <h3>网站菜单设置</h3>
+    <br />
+    <input type="radio" name="menu" value="0"> 默认
+    <input type="radio" name="menu" value="1"> 黑板
+    <input type="radio" name="menu" value="2"> 横批
+    <input type="radio" name="menu" value="3"> 白纸黑字
+  </p>
+
+  <p>
+    <h3>网站栏目管理</h3>
+    <br />
+    <p>
+      <span>欢迎页</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>首页</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>新闻</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>产品展示</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>文章</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>联系我们</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>网站地图</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>留言功能</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+
+    <p>
+      <span>招聘页面</span>
+      <input type="radio" name="welcom" value="0"> 关
+      <input type="radio" name="welcom" value="1"> 开
+      <%= link_to '管理页面', '#', class: 'btn btn-primary' %>
+    </p>
+  </p>
+
+  <p>
+    <h3>网站媒体库</h3>
+    <br />
+    <%= link_to '管理图片和视频', '#', class: 'btn btn-primary' %>
+  </p>
+</form>
