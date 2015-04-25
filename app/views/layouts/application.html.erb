@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="zh-CN">
   <head>
-    <title>Project</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= render_stylesheets %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+    <title>Project Candle0501</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <!--[if lt IE 9]><script src="/css/html5.js"></script><![endif]-->
+
+    <!-- 注释：根据cpanel中选择的不同的style-->
+      <link rel="stylesheet" href="/theme1/css/layout.css" media="screen">
+      <link rel="stylesheet" href="/theme1/css/fontstyles/1.css">
+      <link rel="stylesheet" href="/theme1/css/colors/1.css">
+    <!-- end  注释-->
+
+    <script src="/theme1/js/jquery.js"></script>
+    <script src="/theme1/js/script.js"></script>
+
+    <!-- if responsive is switched on in cpanel-->
+      <link rel="stylesheet" href="/theme1/css/style.responsive.css" media="all">
+      <script src="/theme1/js/script.responsive.js"></script>
+    <!-- end if -->
+    <style>
+      .theme1-content .theme1-postcontent-0 .layout-item-0 { margin-top: 20px;margin-bottom: 20px;  }
+      .theme1-content .theme1-postcontent-0 .layout-item-1 { border-right-style:Dotted;border-right-width:1px;border-right-color:#BFBFBF; padding-right: 25px;padding-left: 25px;  }
+      .theme1-content .theme1-postcontent-0 .layout-item-2 { padding-right: 25px;padding-left: 25px;  }
+      .ie7 .theme1-post .theme1-layout-cell {border:none !important; padding:0 !important; }
+      .ie6 .theme1-post .theme1-layout-cell {border:none !important; padding:0 !important; }
+    </style>
   </head>
-  <body class="<%= controller_name %>" data-controller-name="<%= controller_name %>">
-    <div class="container">
-      <%= render 'common/navigation' %>
+  <body>
+  <div id="theme1-main">
+    <%=render partial: '../../public/theme1/header' %>
+    <%=render partial: '../../public/theme1/navbar'%>
+    <div class="theme1-sheet clearfix">
+      <div class="theme1-layout-wrapper">
+        <div class="theme1-content-layout">
+          <div class="theme1-content-layout-row">
+            <div class="theme1-layout-cell theme1-content">
+              <article class="theme1-post theme1-article">
+                <div class="theme1-postcontent theme1-postcontent-0 clearfix">
+                  <div class="theme1-content-layout-wrapper layout-item-0">
+                    <%= yield %>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="container">
-      <%= yield %>
+    <%=render partial: '../../public/theme1/footer.html.erb'%>
     </div>
-
   </body>
 </html>

@@ -1,0 +1,127 @@
+/* Created by Artisteer v4.1.0.59782 */
+
+.theme1-header, #theme1-header-bg, .theme1-layout-cell, .theme1-layout-wrapper, .theme1-footer, .theme1-nav, #theme1-hmenu-bg, .theme1-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.theme1-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.theme1-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#theme1-header-bg 
+{
+   display: none;
+}
+
+.theme1-hmenu>li, .theme1-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.theme1-hmenu, ul.theme1-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#theme1-hmenu-bg 
+{
+   display: none;
+}
+
+ul.theme1-hmenu>li:first-child {
+   padding-right:1px;
+}
+ul.theme1-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='theme1-hmenu-separator');
+}
+ul.theme1-hmenu>li>span.theme1-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -1px;
+   width: 1px;
+   height: 53px;
+   background: url('/theme1/img/menuseparator.png') center center no-repeat;
+}
+ul.theme1-hmenu>li:first-child>span.theme1-hmenu-separator
+{
+   display:none;
+}
+
+ul.theme1-hmenu ul{
+   background-color: #595959 !important;
+}
+
+.theme1-content-layout, .theme1-content-layout-row, .theme1-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.theme1-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.theme1-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.theme1-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.theme1-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.theme1-postheadericons span{
+   zoom: 1;
+}
+.theme1-postcontent {
+   height: 1%;
+}
+
+.theme1-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.theme1-content 
+{
+   width: auto;
+   float:none;
+}
+
